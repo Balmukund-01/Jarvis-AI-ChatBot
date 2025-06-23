@@ -1,98 +1,95 @@
-# 🤖 Jarvis AI – Your Friendly Coding Companion!
+<!-- prettier-ignore-start -->
+<div align="center">
 
-👋 Hey there, coder! I'm **Jarvis**, your AI-powered assistant built to turbocharge your programming journey. Whether you're debugging a pesky 🐛, building something new 🏗️, or diving into unexplored tech 🌐 — I'm right here with you.
+# 🤖 Jarvis AI — Your Personal Coding Assistant  
+Live → **<https://jarvis-ai-chat-bot.vercel.app>**
 
-Created by **Mukund Shukla**, this chatbot is powered by the **DeepSeek R1** model and deployed to deliver a smooth, intuitive, and delightful coding experience.
+![Next .js](https://img.shields.io/badge/Next.js-15.x-000?style=for-the-badge&logo=nextdotjs)
+![OpenRouter API](https://img.shields.io/badge/OpenRouter-DeepSeek_R1-purple?style=for-the-badge)
+![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000?style=for-the-badge&logo=vercel)
 
----
-
-## 🚀 Features
-- 🧠 Smart, conversational AI designed for coders.
-- 🐞 Debug code or get suggestions for tricky issues.
-- 💡 Learn new concepts in real-time.
-- 📚 Support for multiple languages like JavaScript, Python, and more.
-- 🌐 Built using **Next.js**, **TypeScript**, **Tailwind CSS**, and **ShadCN UI**.
+</div>
 
 ---
 
-## 🔧 Tech Stack
-- **Frontend**: Next.js 14 + TypeScript + Tailwind CSS + ShadCN Components
-- **Backend API**: Edge Route using OpenRouter's `deepseek-r1-0528:free` model
-- **Deployment**: Vercel / Railway
-- **AI Provider**: [DeepSeek via OpenRouter](https://openrouter.ai/deepseek/deepseek-r1-0528:free)
+## ✨ Why Jarvis ?
+
+> “Don’t fear AI — **use** AI.”  
+> Build, debug & learn **in minutes**, not hours.
+
+Jarvis AI is a beautifully-animated coding companion powered by **DeepSeek R1** (via OpenRouter) & built with **Next.js 15 / React 19**.  
+Ask anything: from algorithm explanations 🧩 to full-stack snippets 🏗️, Jarvis replies with syntax-highlighted code & pro tips.
 
 ---
 
-## 🧪 Quick Start Ideas
+## 🔥 Live Demo
 
-### JavaScript
-```js
-// Function to reverse a string
-const reverseString = (str) => str.split('').reverse().join('');
-console.log(reverseString("Hello!")); // Output: "!olleH"
-Python
-python
-Copy
-Edit
-# Check if a string is a palindrome
-is_palindrome = lambda s: s == s[::-1]
-print(is_palindrome("radar"))  # Output: True
-💬 How Can I Help You?
-Jarvis is designed to assist with:
+| Desktop | Mobile |
+|---------|--------|
+| ![Desktop screenshot](docs/screenshot-desktop.png) | ![Mobile screenshot](docs/screenshot-mobile.png) |
 
-✅ Debugging code
+> **Try it now:** <https://jarvis-ai-chat-bot.vercel.app>
 
-📚 Explaining tricky concepts
+---
 
-⚡ Optimizing your code
+## 🚀 Tech Stack
 
-🌈 Inspiring new project ideas
+| Layer            | Stack / Library                              |
+|------------------|----------------------------------------------|
+| Front-end UI     | **Next.js 15**, React 19, Tailwind CSS 3.x   |
+| AI backend       | `ai@4` SDK + `@ai-sdk/openai` (OpenRouter)   |
+| Model            | `deepseek/deepseek-r1-0528:free` (32k ctx)   |
+| Hosting / Edge   | **Vercel** (ISR, edge runtime)               |
+| Icons / Charts   | Lucide-React, Recharts                       |
 
-Just type your question — and let's build something amazing together! 🔥
+---
 
-🧠 About the Creator
-I was created by Mukund Shukla, a passionate developer from India, who believes in:
+## ✨ Key Features
 
-Making programming accessible for all 🧭
+- 💬 **Real-time streaming** answers (no page reloads).  
+- 🐛 *Bug-Buster* prompt examples – click & send instantly.  
+- 🎨 Fully-responsive glassmorphism UI with smooth scrolling.  
+- 🗄️ Clipboard copy, clear chat, connection-status badge.  
+- 🔐 Secure: API key kept server-side (never exposed).
 
-Empowering learners with intuitive tools 💻
+---
 
-Bridging the gap between idea and execution ⚙️
+## ⚙️ Local Setup
 
-Jarvis is inspired by Tony Stark’s AI but focuses on real-world software solutions, not saving the universe 😄
+```bash
+# 1. Clone
+git clone https://github.com/Balmukund-01/Jarvis-AI-ChatBot.git
+cd Jarvis-AI-ChatBot
+```
+# 2. Install deps
+```
+npm install   # or pnpm install
+```
+# 3. Env variables
+```
+cp .env.local.example .env.local
+```
+# then add your key ↓
+```
+OPENROUTER_API_KEY=sk-or-xxxxxxxxxxxxxxxxxxxx
+```
+# 4. Run dev server
+```
+npm run dev
+# visit http://localhost:3000
+```
+✈️ Deploy on Vercel
+Import the repo → Vercel.
+```
+Add env variable OPENROUTER_API_KEY.
+```
+Click Deploy – done in ~60 s.
 
-Here’s me in code:
-
-js
-Copy
-Edit
-const jarvis = {
-  purpose: "Demystify Coding",
-  superpowers: ["Debugging", "Teaching", "Optimizing"],
-  creator: "Mukund Shukla",
-  motto: "Make coding accessible to all!",
-  energySource: "Your programming questions ☕"
-};
-🌐 Try It Live
-👉 Live Demo
-
-🔗 Powered By
-DeepSeek R1 via OpenRouter:
-https://openrouter.ai/deepseek/deepseek-r1-0528:free
+🤝 Contributing
+PRs are welcome!
+Found a bug / have an idea? → open an issue or ping me on LinkedIn.
 
 📜 License
 MIT © 2025 Mukund Shukla
 
-yaml
-Copy
-Edit
-
----
-
-### ✅ Next Steps:
-1. Save this as `README.md` in your project root.
-2. Add it to Git:
-```bash
-git add README.md
-git commit -m "Added project README for Jarvis AI"
-git push
+<!-- prettier-ignore-end -->
