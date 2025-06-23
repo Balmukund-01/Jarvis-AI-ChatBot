@@ -1,4 +1,5 @@
 import { createOpenAI } from "@ai-sdk/openai"
+// import { streamText} from "ai"
 import { streamText } from "ai"
 
 // ✅ Create OpenRouter client properly
@@ -62,6 +63,7 @@ JavaScript 🟨 | TypeScript 🔷 | Python 🐍 | React ⚛️ | Node.js 🟢 | 
 
     // ✅ CORRECT METHOD NAME - toDataStreamResponse()
     return result.toDataStreamResponse()
+    // return new StreamingTextResponse(result.toAIStream())
   } catch (error) {
     console.error("❌ API Route Error Details:")
     console.error("❌ Error type:", typeof error)
